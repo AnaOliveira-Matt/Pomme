@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu Mono", monospace;;
+}
+
+#cabecalho{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: #821E16;
+    padding: 15px 30px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-bottom:5px;
+  
+    .container-icones-cabecario{
+        display: grid;
+        grid-template-columns: repeat(3,0.2fr);
+    }
+    .icons{
+    
+     align-items: center;
+     width: 40px;
+     list-style: none;
+
+}
+
+    #temas{
+        list-style: none;
+        
+        button{
+            width: 3vw;
+            border-radius: 50px;
+            border: none;
+            background-color: transparent;
+            img{
+                width: 3vw;
+            }
+        }
+    }
+    .logo{
+
+
+     width:17vw;
+
+    }
+
+    .pesquisa{
+     justify-content: flex-end;  
+     width: 28vw;
+     padding: 12px;
+     border: none;
+     border-radius: 34px;
+     background-color: rgb(233, 232, 232);
+     background-image: url('lupaParaPesquisa.png');
+     background-repeat: no-repeat; 
+     background-position: right; 
+     background-size:40px 40px; 
+ 
+}
+    .pesquisa input{
+     width: 80;
+     padding: 12px;
+     border: none;
+    }
+}
+
+
+
+
+
+
+
+.dark-mode {
+    background-color:#12282F;
+    color:#F1E1C0;
+    list-style: none;
+    
+    .vermelho{
+        background-color: #55100A;
+    }
+    #cadastro{
+        background-color: #346876;
+    }
+    footer{
+        background-color: #55100A;
+    }
+  }
+
+
+.tabelaazul{
+    background-color: #5A95A2;
+    height: 60px;
+    width: 80%;
+    margin: -5px auto 0;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+  }
+
+
+  .caminho{
+    font-size: 42px;
+    a{
+        /* Lembrar de mudar a cor da fonte no modo escuro */
+        color: black;
+        text-decoration: none;
+    }
+    }
+  
+    .items{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-content: center;
+        justify-items: center;
+    #filtros{
+     p{
+        font-size: 22px;
+     }
+     input{
+        width:6vw;
+     }
+     button{
+        border: none;
+        border-radius: 20px;
+        background-color: #821E16;
+        font-size: 12px;
+        padding: 2vh;
+        color: black; /*Tambem mudar quando for modo escuro*/
+     }
+    }
+    }
+  /*Final da pagina*/
+  #cadastro{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    background-color: #8FB2B6;
+    height: 17vh;
+    font-size: 30px;
+    button{
+        margin: 4vh 4vw;
+        border: none;
+        border-radius: 30px;
+        background-color: #5A95A2;
+    }
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height:25vh;
+    background-color: #821E16;
+    p{
+        padding: 3vh;
+        margin:10vh;
+    }
+    p:nth-child(2){
+        justify-self: center;
+    }
+}
