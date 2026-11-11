@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu Mono", monospace;;
+}
+
+body{
+    background-color: #FFF7E2;
+}
+
+#cabecalho{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: #821E16;
+    padding: 15px 30px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-bottom:5px;
+  
+    .container-icones-cabecario{
+        display: grid;
+        grid-template-columns: repeat(3,0.2fr);
+    }
+    .icons{
+    
+     align-items: center;
+     width: 40px;
+     list-style: none;
+
+}
+
+    #temas{
+        list-style: none;
+        
+        button{
+            width: 3vw;
+            border-radius: 50px;
+            border: none;
+            background-color: transparent;
+            img{
+                width: 3vw;
+            }
+        }
+    }
+    .logo{
+
+
+     width:17vw;
+
+    }
+
+    .pesquisa{
+     justify-content: flex-end;  
+     width: 28vw;
+     padding: 12px;
+     border: none;
+     border-radius: 34px;
+     background-color: rgb(233, 232, 232);
+     background-image: url('lupaParaPesquisa.png');
+     background-repeat: no-repeat; 
+     background-position: right; 
+     background-size:40px 40px; 
+ 
+}
+    .pesquisa input{
+     width: 80;
+     padding: 12px;
+     border: none;
+    }
+}
+
+
+
+
+
+
+
+.dark-mode {
+    background-color:#12282F;
+    color:#F1E1C0;
+    list-style: none;
+    
+    .vermelho{
+        background-color: #55100A;
+    }
+    #produtos{
+    .pedido{
+        background-color: #346876;
+        #descricao{
+            button{
+                background-color: #07161A;
+            }
+        }
+    }}
+    .finalizar{
+        button{
+        background-color: #07161A;
+    }}
+    #cadastro{
+        background-color: #346876;
+         a{
+            color: #F1E1C0;
+        }
+    }
+    footer{
+        background-color: #55100A;
+    }
+  }
+
+
+
+  #cadastro{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    background-color: #8FB2B6;
+    height: 30vh;
+    font-size: 30px;
+    p{
+        text-align: center;
+        align-self: center;
+    }
+    img{
+        margin-left:6vw ;
+        width: 15vw;
+        height: 25vh;
+    }
+    a{
+        /*Mudar cor da fonte no modo escuro*/
+        margin: 4vh 4vw;
+        text-decoration: none;
+        color:black;
+        text-align: center;
+        align-self: center;
+        padding: 4vh;
+        border: none;
+        border-radius: 30px;
+        background-color: #5A95A2;
+        font-size: 30px;
+    }
+}
+
+#produtos{
+    padding:8vh;
+    
+    .pedido{
+        display: flex;
+        padding: 2vh 2vw 5vh 2vw;
+        margin: 2vh;
+        background-color: #ebd9b7;
+        font-size: 19px;
+        img{
+            width:20vw;
+            height:45vh;
+        }
+        input{
+            font-size: 19px;
+        }
+            #descricao{
+                padding: 8vh;
+                button{
+                    color: #ffffff;
+                    background-color: #346876;
+                    border: none;
+                    border-radius: 20px;
+                    padding: 2vh;
+                    font-size: 22px;
+                    margin-top:2vh;
+                }
+            }
+    }
+}
+
+.finalizar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 8vh;
+    button{
+        background-color: #346876;
+        color: #ffffff;
+        border: none;
+        border-radius: 20px;
+        padding: 5vh;
+        width: 50%;
+        justify-self:center;
+        font-size: 32px;
+    }
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height:25vh;
+    background-color: #821E16;
+    color: #ffffff;
+    p{
+        padding: 3vh;
+        margin:10vh;
+    }
+    p:nth-child(2){
+        justify-self: center;
+    }
+}

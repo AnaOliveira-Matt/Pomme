@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu Mono", monospace;;
+}
+
+body{
+    background-color: #FFF7E2;
+}
+
+#cabecalho{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: #821E16;
+    padding: 15px 30px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-bottom:5px;
+  
+    .container-icones-cabecario{
+        display: grid;
+        grid-template-columns: repeat(3,0.2fr);
+    }
+    .icons{
+    
+     align-items: center;
+     width: 40px;
+     list-style: none;
+
+}
+
+    #temas{
+        list-style: none;
+        
+        button{
+            width: 3vw;
+            border-radius: 50px;
+            border: none;
+            background-color: transparent;
+            img{
+                width: 3vw;
+            }
+        }
+    }
+    .logo{
+
+
+     width:17vw;
+
+    }
+
+    .pesquisa{
+     justify-content: flex-end;  
+     width: 28vw;
+     padding: 12px;
+     border: none;
+     border-radius: 34px;
+     background-color: rgb(233, 232, 232);
+     background-image: url('lupaParaPesquisa.png');
+     background-repeat: no-repeat; 
+     background-position: right; 
+     background-size:40px 40px; 
+ 
+}
+    .pesquisa input{
+     width: 80;
+     padding: 12px;
+     border: none;
+    }
+}
+
+
+
+
+
+
+
+.dark-mode {
+    background-color:#12282F;
+    color:#F1E1C0;
+    list-style: none;
+    
+    .vermelho{
+        background-color: #55100A;
+    }
+    .formularioCadastro{
+        background-color: #346876;
+        button{
+            background-color: #12282F;
+            color: #F1E1C0;
+        }
+    }
+    #cadastro{
+        background-color: #346876;
+        a{
+            color: #F1E1C0;
+        }
+    }
+    footer{
+        background-color: #55100A;
+    }
+  }
+
+.formularioCadastro{
+    display: grid;
+    justify-content: center;
+    background-color:#e9d7b2 ;
+    border: none;
+    border-radius: 20px;
+    margin: 25vh 30vw;
+    p{
+        text-align: center;
+        font-size: 42px;
+        padding: 5vh;
+    }
+    label{
+        text-align: center;
+        padding: 6vh 1vw;
+        font-size: 22px;
+    }
+    input{
+        text-align: center;
+        font-size: 22px;
+        padding: 1vh;
+        border: none;
+        border-radius: 10px;
+        margin: 2vh 0vw;
+
+    }
+    #login{
+        font-size:22px;
+    }
+    button{
+        border: none;
+        border-radius: 20px;
+        font-size: 22px;
+        padding: 2vh;
+        background-color: #346876;
+        margin: 3vh;
+        width: 60%;
+        margin-left: 20% ;
+    }
+}
+
+  #cadastro{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    background-color: #8FB2B6;
+    height: 30vh;
+    font-size: 30px;
+    p{
+        text-align: center;
+        align-self: center;
+    }
+    img{
+        margin-left:6vw ;
+        width: 15vw;
+        height: 25vh;
+    }
+    a{
+        /*Mudar cor da fonte no modo escuro*/
+        margin: 4vh 4vw;
+        text-decoration: none;
+        color:black;
+        text-align: center;
+        align-self: center;
+        padding: 4vh;
+        border: none;
+        border-radius: 30px;
+        background-color: #5A95A2;
+        font-size: 30px;
+    }
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height:25vh;
+    background-color: #821E16;
+    color: #ffffff;
+    p{
+        padding: 3vh;
+        margin:10vh;
+    }
+    p:nth-child(2){
+        justify-self: center;
+    }
+}
